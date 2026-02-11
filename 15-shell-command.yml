@@ -1,0 +1,7 @@
+- name: ansible cpmmand vs shell module
+  hosts: local
+  connection: local
+  tasks:
+  - name: command module types
+    ansible.builtin.command: cat/etc/paased | grep root
+    register: users_output
