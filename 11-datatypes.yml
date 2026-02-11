@@ -1,24 +1,26 @@
 - name: demo on data types
-  host: local
-  connections: local
+  hosts: local
+  connection: local
+
   vars:
-   PROGRAM: "DevOps with AWS" #STRING
-   DURATION: "140" #INT
-   IS_LIVE: true #bool
-   DETILS:
-     MONTHS: 4
-     TRAINER: SIVA
-   TOPICS: 
-    - LINUX
-    - SHELL
-    - ANSIBLE
+    PROGRAM: "DevOps with AWS"   # STRING
+    DURATION: 140                # INT
+    IS_LIVE: true                # BOOL
+    DETAILS:
+      MONTHS: 4
+      TRAINER: "SIVA"
+    TOPICS:
+      - LINUX
+      - SHELL
+      - ANSIBLE
+
   tasks:
-   - name: print vars
+    - name: print vars
       ansible.builtin.debug:
-      msg:
-       program: {{ PROGRAM }}
-       DURATION {{ DURATION }}
-       IS_LIVE {{ IS_LIVE }}
-       DETILS {{ DETILS }}
-       TOPICS {{ TOPICS }}
+        msg:
+          program: "{{ PROGRAM }}"
+          duration: "{{ DURATION }}"
+          is_live: "{{ IS_LIVE }}"
+          details: "{{ DETAILS }}"
+          topics: "{{ TOPICS }}"
        
