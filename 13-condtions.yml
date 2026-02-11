@@ -1,10 +1,12 @@
 - name: demo on data types
   hosts: local
   connection: local
+
   vars:
-    No.of sessions: 7
+    no_of_sessions: 7
+
   tasks:
-   - name: is ansible more than 5 sessions
-     ansible.builtin.debug:
-      msg: "yes, more than 5 sessions "
-     When: No.of sessions > 5
+    - name: is ansible more than 5 sessions
+      ansible.builtin.debug:
+        msg: "yes, more than 5 sessions"
+      when: no_of_sessions > 5
