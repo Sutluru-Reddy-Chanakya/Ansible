@@ -1,8 +1,8 @@
-- name: ansible cpmmand vs shell module
+- name: ansible command vs shell module
   hosts: local
   connection: local
   tasks:
-  - name: command module types
-    #ansible.builtin.command: cat/etc/paased | grep root
-    ansible.builtin.shell: cat /etc/paaswd | grep root
+  - name: command module test
+    #ansible.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.shell: cat /etc/passwd | grep root
     register: users_output
