@@ -5,5 +5,5 @@
     - name: install run nginx
       ansible.builtin.package:
       name: nginx
-        state: present 
+      state: present 
         
