@@ -4,5 +4,5 @@
   tasks:
   - name: command module types
     #ansible.builtin.command: cat/etc/paased | grep root
-    ansible.builtin.shell: cat /etc/paased | grep root
+    ansible.builtin.shell: cat /etc/paaswd | grep root
     register: users_output
