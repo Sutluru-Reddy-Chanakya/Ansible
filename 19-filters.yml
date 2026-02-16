@@ -4,7 +4,7 @@
   vars:
     topics: "linux, shell, ansible, terraform"
     tags:
-      name: ansible
+      Name: ansible
       project: roboshop
       component: cat
   tasks:
@@ -18,4 +18,4 @@
 
    - name: convert map to list 
      ansible.builtin.debug:
-       msg: "{{ tags | dict2items }}"
+       msg: "{{ tags | dict2items }}" 
