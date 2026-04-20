@@ -1,4 +1,4 @@
-- name: play level var
+- name: file level varibles
   hosts: local
   connection: local
   vars_files:
@@ -9,3 +9,8 @@
       #COURSE: Ansible 
     ansible.builtin.debug:
      msg: "COURSE is:{{COURSE}}, DURATION IS :{{DURATION}} , Trainer is {{Trainer}}"
+
+
+    #  Here varibles are defined in Course.yml file and we are calling those varibles in debug module. 
+    #  We can also override the varibles by defining them in vars section of task. 
+    #  In that case, the varibles defined in task will take precedence over the varibles defined in file.
