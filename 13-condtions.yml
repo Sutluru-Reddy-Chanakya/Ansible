@@ -1,4 +1,4 @@
-- name: demo on data types
+- name: check a number less than 10 or NOTE - 
   hosts: local
   connection: local
 
