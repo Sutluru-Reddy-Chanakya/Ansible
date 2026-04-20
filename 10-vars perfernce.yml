@@ -5,8 +5,8 @@
   vars:
     Name: "Ansible from PLAY"
 
-  vars_files:
-    - Course.yml
+  # vars_files:
+  #   - Course.yml
 
   vars_prompt:
     - name: enter_name
@@ -26,3 +26,5 @@
 
         # 1=Args
         #2-Task
+        #3-File
+
