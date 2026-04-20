@@ -13,8 +13,8 @@
       prompt: "Please enter your name"
       private: false
 
-  # tasks:
-  #   - name: print name NAME
+  tasks:
+    - name: print name NAME
   #     # vars:
   #     #   NAME: "Ansible from task"
 
@@ -27,4 +27,7 @@
         # 1=Args
         #2-Task
         #3-File
+        #4-PROMPT
+        #5-PLAY
+        #6-Inventory
 
