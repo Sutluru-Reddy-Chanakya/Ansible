@@ -1,4 +1,4 @@
-- name: var from args
+- name: var perference demo
   hosts: local
   connection: local
 
